@@ -79,7 +79,7 @@ public class WeatherDbHelper extends SQLiteOpenHelper {
                                             LocationEntry.COLUMN_COORD_LAT + " REAL NOT NULL," +
                                             LocationEntry.COLUMN_COORD_LONG + " REAL NOT NULL" + ");";
 
-        Log.e("XXXXXXXXXX",SQL_CREATE_LOCATION_TABLE);
+        Log.d("XXXXXXXXXX",SQL_CREATE_LOCATION_TABLE);
         sqLiteDatabase.execSQL(SQL_CREATE_LOCATION_TABLE);
         sqLiteDatabase.execSQL(SQL_CREATE_WEATHER_TABLE);
     }
